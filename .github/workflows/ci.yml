@@ -15,7 +15,7 @@ jobs:
         with:
           auto-update-conda: true
           environment-file: environment.yml
-          activate-environment: libra-run-env
+          activate-environment: baby-1l-run-3
 
       # example how to run a notebook
       # - name: Run tritium model
