@@ -22,3 +22,9 @@ jobs:
       #   shell: bash -l {0}
       #   working-directory: analysis/tritium
       #   run: jupyter-nbconvert --to notebook tritium_model.ipynb --execute
+
+      - name: Run PRT detection
+        shell: bash -l {0}
+        working-directory: analysis/neutron
+        run: jupyter-nbconvert --to notebook main.ipynb --execute
+
