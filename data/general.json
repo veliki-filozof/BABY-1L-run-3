@@ -67,18 +67,6 @@
             "source_voltage": {
                 "value": 3,
                 "unit": "kV"
-            }
-        },
-        {
-            "name": "P-383",
-            "enabled": false,
-            "beam_current": {
-                "value": "N/A",
-                "unit": "N/A"
-            },
-            "beam_voltage": {
-                "value": "N/A",
-                "unit": "N/A"
             },
             "periods": [
                 {
@@ -90,6 +78,18 @@
                     "end": "3/17/2025 22:10"
                 }
             ]
+        },
+        {
+            "name": "P-383",
+            "enabled": false,
+            "beam_current": {
+                "value": "N/A",
+                "unit": "N/A"
+            },
+            "beam_voltage": {
+                "value": "N/A",
+                "unit": "N/A"
+            }
         }
     ],
     "notes": "A-325 positioned under the work surface, cooled with combined blower airflow from the side and small fan from the front. Gap between bottom surface of epoxy and the generator around 1/8 inch. Briefly interrupted to reset MFC.",

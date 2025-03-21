@@ -160,7 +160,8 @@ for generator in general_data["generators"]:
 # Neutron rate
 neutron_rate_relative_uncertainty = 0.089  # TODO check with Collin what is the uncertainty on this measurement
 
-neutron_rate = 2.611e+08 * ureg.neutron * ureg.s**-1  # TODO from Collin's foil analysis, replace with more robust method
+# neutron_rate = 2.611e+08 * ureg.neutron * ureg.s**-1  # TODO from Collin's foil analysis, replace with more robust method
+neutron_rate = np.mean([9.426e7, 8.002e7, 1.001e8]) * ureg.neutron * ureg.s**-1 # copied from run 1
 
 # TBR from OpenMC
 
@@ -194,14 +195,19 @@ measured_TBR = (T_produced / quantity_to_activity(T_consumed)).to(
     ureg.particle * ureg.neutron**-1
 )
 
-k_top = 0.7*8.9e-8 * ureg.m * ureg.s**-1
-k_wall = 0 * ureg.m * ureg.s**-1
+# k_top = 0.7*8.9e-8 * ureg.m * ureg.s**-1
+# k_wall = 0 * ureg.m * ureg.s**-1
 
+# Run 1 transport coeff and measured TBR for overlay
+optimised_ratio = 1.7e-2
+k_top = 8.9e-8 * ureg.m * ureg.s**-1
+k_wall = optimised_ratio * k_top
+run1_TBR = 2.39e-03 * ureg.particle / ureg.neutron
 
 baby_model = Model(
     radius=baby_radius,
     height=baby_height,
-    TBR=measured_TBR,
+    TBR=run1_TBR,
     neutron_rate=neutron_rate,
     irradiations=irradiations,
     k_top=k_top,
