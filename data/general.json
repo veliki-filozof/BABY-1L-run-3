@@ -198,12 +198,12 @@
             },
             "6": {
                 "planned_sample_time": "3/26/2025 10:03",
-                "actual_sample_time": null,
+                "actual_sample_time": "3/27/2025 13:00",
                 "lsc_vials_filenames": {
-                    "1": null,
-                    "2": null,
-                    "3": null,
-                    "4": null
+                    "1": "1L_IV_3-5_3-6_OV_3-2_BL-2.csv",
+                    "2": "1L_IV_3-5_3-6_OV_3-2_BL-2.csv",
+                    "3": "1L_IV_3-5_3-6_OV_3-2_BL-2.csv",
+                    "4": "1L_IV_3-5_3-6_OV_3-2_BL-2.csv"
                 }
             },
             "7": {
