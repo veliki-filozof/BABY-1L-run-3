@@ -15,6 +15,7 @@ from datetime import datetime
 all_file_readers = []
 all_quench = []
 
+
 def create_sample(label: str, filename: str) -> LSCSample:
     """
     Create a LSCSample from a LSC file with background substracted.
@@ -42,7 +43,7 @@ def create_sample(label: str, filename: str) -> LSCSample:
     # create the sample
     sample = LSCSample.from_file(file_reader, label)
 
-   # try to find the background sample from the file
+    # try to find the background sample from the file
     background_labels = ["1L-BL-1", "1L-BL-2", "1L-BL-3"]
     background_sample = None
 
@@ -158,10 +159,10 @@ for generator in general_data["generators"]:
         irradiations.append([irr_start_time, irr_stop_time])
 
 # Neutron rate
-neutron_rate_relative_uncertainty = 0.089  # TODO check with Collin what is the uncertainty on this measurement
+neutron_rate_relative_uncertainty = 0.1
 
-# neutron_rate = 2.611e+08 * ureg.neutron * ureg.s**-1  # TODO from Collin's foil analysis, replace with more robust method
-neutron_rate = np.mean([9.426e7, 8.002e7, 1.001e8]) * ureg.neutron * ureg.s**-1 # copied from run 1
+# TODO from Collin's foil analysis, replace with more robust method
+neutron_rate = 9.47e7 * ureg.neutron * ureg.s**-1
 
 # TBR from OpenMC
 
@@ -195,12 +196,9 @@ measured_TBR = (T_produced / quantity_to_activity(T_consumed)).to(
     ureg.particle * ureg.neutron**-1
 )
 
-# k_top = 0.7*8.9e-8 * ureg.m * ureg.s**-1
-# k_wall = 0 * ureg.m * ureg.s**-1
-
 # Run 1 transport coeff and measured TBR for overlay
 optimised_ratio = 1.7e-2
-k_top = 8.9e-8 * ureg.m * ureg.s**-1
+k_top = 1.335e-07 * ureg.m * ureg.s**-1
 k_wall = optimised_ratio * k_top
 run1_TBR = 2.39e-03 * ureg.particle / ureg.neutron
 
