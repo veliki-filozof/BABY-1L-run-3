@@ -196,12 +196,9 @@ measured_TBR = (T_produced / quantity_to_activity(T_consumed)).to(
     ureg.particle * ureg.neutron**-1
 )
 
-# k_top = 0.7*8.9e-8 * ureg.m * ureg.s**-1
-# k_wall = 0 * ureg.m * ureg.s**-1
-
 # Run 1 transport coeff and measured TBR for overlay
 optimised_ratio = 1.7e-2
-k_top = 1.5 * 8.9e-8 * ureg.m * ureg.s**-1
+k_top = 1.335e-07 * ureg.m * ureg.s**-1
 k_wall = optimised_ratio * k_top
 run1_TBR = 2.39e-03 * ureg.particle / ureg.neutron
 
