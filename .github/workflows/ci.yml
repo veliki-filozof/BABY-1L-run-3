@@ -17,6 +17,11 @@ jobs:
           environment-file: environment.yml
           activate-environment: baby-1l-run-3
 
+      - name: Run PRT detection
+        shell: bash -l {0}
+        working-directory: analysis/neutron
+        run: jupyter-nbconvert --to notebook main.ipynb --execute
+
       - name: Run neutronics
         shell: bash -l {0}
         working-directory: analysis/neutron
