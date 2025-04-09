@@ -139,8 +139,6 @@ gas_switch_time = datetime.strptime(
 gas_switch_deltatime = gas_switch_time - start_time
 gas_switch_deltatime = gas_switch_deltatime.total_seconds() * ureg.s
 gas_switch_deltatime = gas_switch_deltatime.to(ureg.day)
-#print(f'This is the start time: {start_time}')
-#print(f'Days before gas switch: {gas_switch_deltatime}')
 
 # tritium model
 
