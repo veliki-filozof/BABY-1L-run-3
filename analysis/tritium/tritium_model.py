@@ -214,7 +214,6 @@ measured_TBR = (T_produced / quantity_to_activity(T_consumed)).to(
 optimised_ratio = 0.0*1.7e-2
 k_top = 1.45*8.9e-8 * ureg.m * ureg.s**-1
 k_wall = optimised_ratio * k_top
-# run1_TBR = 2.39e-03 * ureg.particle / ureg.neutron
 
 baby_model = Model(
     radius=baby_radius,
