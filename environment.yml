@@ -18,7 +18,7 @@ dependencies:
   - pytables
   - pip
   - pip:
-      - git+https://github.com/libra-project/libra-toolbox # add version tag
+      - git+https://github.com/libra-project/libra-toolbox@v0.6
       - openmc_data_downloader
       - matplotlib-label-lines
       - h-transport-materials
