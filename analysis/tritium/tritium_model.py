@@ -131,6 +131,14 @@ sampling_times = {
 replacement_times_top = sampling_times["IV"]
 replacement_times_walls = sampling_times["OV"]
 
+# read gas change time
+
+gas_switch_time = datetime.strptime(
+    general_data["cover_gas"]["switched_to"]["gas_switch_time"], "%m/%d/%Y %H:%M"
+)
+gas_switch_deltatime = gas_switch_time - start_time
+gas_switch_deltatime = gas_switch_deltatime.total_seconds() * ureg.s
+gas_switch_deltatime = gas_switch_deltatime.to(ureg.day)
 
 # tritium model
 
@@ -161,8 +169,12 @@ for generator in general_data["generators"]:
 # Neutron rate
 neutron_rate_relative_uncertainty = 0.1
 
-# TODO from Collin's foil analysis, replace with more robust method
+
+# neutron_rate = 2.611e+08 * ureg.neutron * ureg.s**-1  # TODO from Collin's foil analysis, replace with more robust method
+# neutron_rate = np.mean([9.426e7, 8.002e7, 1.001e8]) * ureg.neutron * ureg.s**-1 # copied from run 1
+
 neutron_rate = 9.47e7 * ureg.neutron * ureg.s**-1
+scaled_neutron_rate = 1.1 * neutron_rate
 
 # TBR from OpenMC
 
@@ -196,15 +208,16 @@ measured_TBR = (T_produced / quantity_to_activity(T_consumed)).to(
     ureg.particle * ureg.neutron**-1
 )
 
-optimised_ratio = 0.0
-k_top = 1.7e-07 * ureg.m * ureg.s**-1
+# Run 1 transport coeff and measured TBR for overlay
+optimised_ratio = 0.0*1.7e-2
+k_top = 1.45*8.9e-8 * ureg.m * ureg.s**-1
 k_wall = optimised_ratio * k_top
 
 baby_model = Model(
     radius=baby_radius,
     height=baby_height,
-    TBR=calculated_TBR * 1.07,
-    neutron_rate=neutron_rate,
+    TBR=calculated_TBR,
+    neutron_rate=scaled_neutron_rate,
     irradiations=irradiations,
     k_top=k_top,
     k_wall=k_wall,
