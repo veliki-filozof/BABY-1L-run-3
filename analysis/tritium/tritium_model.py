@@ -174,6 +174,7 @@ neutron_rate_relative_uncertainty = 0.1
 # neutron_rate = np.mean([9.426e7, 8.002e7, 1.001e8]) * ureg.neutron * ureg.s**-1 # copied from run 1
 
 neutron_rate = 9.47e7 * ureg.neutron * ureg.s**-1
+scaled_neutron_rate = 1.1 * neutron_rate
 
 # TBR from OpenMC
 
@@ -219,7 +220,7 @@ baby_model = Model(
     radius=baby_radius,
     height=baby_height,
     TBR=calculated_TBR,
-    neutron_rate=1.1*neutron_rate,
+    neutron_rate=scaled_neutron_rate,
     irradiations=irradiations,
     k_top=k_top,
     k_wall=k_wall,
