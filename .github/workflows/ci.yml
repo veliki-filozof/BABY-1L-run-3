@@ -20,7 +20,7 @@ jobs:
       - name: Run PRT detection
         shell: bash -l {0}
         working-directory: analysis/neutron
-        run: jupyter-nbconvert --to notebook main.ipynb --execute
+        run: jupyter-nbconvert --to notebook prt.ipynb --execute
 
       - name: Run neutronics
         shell: bash -l {0}
