@@ -31,3 +31,8 @@ jobs:
         shell: bash -l {0}
         working-directory: analysis/tritium
         run: jupyter-nbconvert --to notebook tritium_model.ipynb --execute
+
+      - name: Run tritium model
+        shell: bash -l {0}
+        working-directory: analysis/tritium
+        run: jupyter-nbconvert --to notebook tritium_model_plotly.ipynb --execute
