@@ -1,0 +1,59 @@
+Assay Definition
+
+Assay Description:
+1L BABY Experiment standard count, beginning with run 1L-3
+Assay Type: DPM (Single)
+Report Name: Report1
+Output Data Path: C:\Packard\TriCarb\Results\Default\NEW_Flibe_Long\Various
+Raw Results Path: C:\Packard\Tricarb\Results\Default\NEW_Flibe_Long\20250410_1345\20250410_1345.results
+Comma-Delimited File Name: C:\Packard\TriCarb\Results\Default\NEW_Flibe_Long\Various\1L_BL-2_IV_3-11_OV_3-7.csv
+Assay File Name: C:\Packard\TriCarb\Assays\NEW_Flibe_Long.lsa
+
+Additional Data Files Generated with this Protocol:
+Report1
+		[Excel]	1L_BL-2_IV_3-11_OV_3-7.csv
+
+
+Count Conditions
+
+Nuclide: LIBRA UG LLT NM      
+   Quench Indicator: tSIE
+   External Std Terminator (sec): 0.5 2s%
+   Pre-Count Delay (min): 0.00
+Quench Set:                   
+   Low Energy: 3H-UG-LLT-NM-C
+Count Time (min): 100.00
+Count Mode: Normal                                          
+Assay Count Cycles: 1         Repeat Sample Count: 1        
+Number of Vials/Sample: 1     Calculate % Reference: Off                                  
+
+
+Background Subtract: Off
+Low CPM Threshold: Off
+2 Sigma % Terminator: Off
+
+Regions         LL       UL
+A              0.5      5.0
+B              0.5     10.0
+C              0.0     18.6
+
+
+Count Corrections
+
+Static Controller: On         Luminescence Correction: On     GCT: n/a
+Colored Samples: Off          Heterogeneity Monitor: Off      PAC: Disabled
+Coincidence Time (nsec): 18   Delay Before Burst (nsec): 75   PAC Strength: n/a   Auxiliary Spectrum: n/a
+
+
+S#,SMPL_ID,Bq:1,CPMA,LUM,tSIE,Eff Nuc1 In A,Count Time,DPM1
+1,1L-BL-2,0.327,4.730,2,280.46,24.13,100,19.606
+Missing vial 2.
+3,1L-IV_3-11-1,0.324,5.700,1,353.90,29.32,100,19.442
+4,1L-IV_3-11-2,0.411,6.190,0,291.90,25.13,100,24.636
+5,1L-IV_3-11-3,1.407,20.820,0,286.63,24.67,100,84.394
+6,1L-IV_3-11-4,0.552,8.250,0,289.36,24.91,100,33.122
+Missing vial 7.
+8,1L-OV_3-7-1,0.316,5.990,0,397.81,31.60,100,18.956
+9,1L-OV_3-7-2,0.431,6.490,0,291.37,25.08,100,25.877
+10,1L-OV_3-7-3,0.693,10.150,0,283.84,24.42,100,41.558
+11,1L-OV_3-7-4,0.486,7.250,0,288.98,24.88,100,29.145
