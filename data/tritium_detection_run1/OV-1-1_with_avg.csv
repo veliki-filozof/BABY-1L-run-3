@@ -1,0 +1,89 @@
+Assay Definition
+
+Assay Description:
+
+Assay Type: DPM (Single)
+Report Name: Report1
+Output Data Path: C:\Packard\Tricarb\Results\Default\NEW_Flibe_Long\20241115_1505\Replay_20241213_114141
+Raw Results Path: C:\Packard\Tricarb\Results\Default\NEW_Flibe_Long\20241115_1505\20241115_1505.results
+Comma-Delimited File Name: C:\Packard\Tricarb\Results\Default\NEW_Flibe_Long\20241115_1505\Replay_20241213_114141\NEW_OV-1-1_with_avg.csv
+Assay File Name: C:\Packard\TriCarb\Assays\NEW_Flibe_Long.lsa
+
+Additional Data Files Generated with this Protocol:
+Report1
+		[Excel]	NEW_OV-1-1_with_avg.csv
+
+
+Count Conditions
+
+Nuclide: 3H UG LLT Normal     
+   Quench Indicator: tSIE/AEC
+   External Std Terminator (sec): 0.5 2s%
+   Pre-Count Delay (min): 0.00
+Quench Set:                   
+   Low Energy: 3H-UG-LLT-NM
+Count Time (min): 120.00
+Count Mode: Normal                                          
+Assay Count Cycles: 1         Repeat Sample Count: 6        
+Number of Vials/Sample: 1     Calculate % Reference: Off                                  
+
+
+Background Subtract: Off
+Low CPM Threshold: Off
+2 Sigma % Terminator: Off
+
+Regions         LL       UL
+A              0.0     18.6
+B              2.0     18.6
+C              4.0     18.6
+
+
+Count Corrections
+
+Static Controller: On         Luminescence Correction: On     GCT: n/a
+Colored Samples: Off          Heterogeneity Monitor: Off      PAC: Disabled
+Coincidence Time (nsec): 18   Delay Before Burst (nsec): 75   PAC Strength: n/a   Auxiliary Spectrum: n/a
+
+
+S#,Count Time,CPMA,DPM1,SIS,tSIE,MESSAGES,Bq:1,LUM
+1,120.00,6,20.5,1015.73,290.84,,0.342,5
+1,120.00,6,20.8,1057.79,291.66,,0.347,3
+1,120.00,5,18.6,1046.46,290.70,,0.311,2
+1,120.00,6,20.8,1029.45,291.51,,0.346,2
+1,120.00,6,21.0,1042.88,291.08,,0.349,1
+1,120.00,6,21.5,1063.09,290.73,,0.358,1
+,,6,20.5,1042.57,291.09,A,0.342,2
+
+Missing vial 2.
+3,120.00,9,29.3,897.88,324.36,,0.488,8
+3,120.00,9,28.1,842.21,324.78,,0.469,8
+3,120.00,9,28.5,909.76,324.81,,0.475,7
+3,120.00,8,26.7,928.72,324.47,,0.445,6
+3,120.00,8,28.1,898.73,323.92,,0.468,6
+3,120.00,8,26.7,895.17,323.37,,0.444,5
+,,8,27.9,895.41,324.29,A,0.465,7
+
+4,120.00,7,28.8,965.67,278.97,,0.480,1
+4,120.00,8,30.6,1000.87,277.88,,0.510,1
+4,120.00,7,28.9,999.46,277.97,,0.482,1
+4,120.00,8,29.1,1046.15,278.80,,0.486,1
+4,120.00,8,29.6,963.84,278.12,,0.494,1
+4,120.00,7,27.7,991.31,278.91,,0.462,1
+,,8,29.1,994.55,278.44,A,0.486,1
+
+5,120.00,6,23.6,1030.44,267.88,,0.394,1
+5,120.00,6,24.2,1022.74,267.94,,0.403,1
+5,120.00,6,24.4,1012.74,267.73,,0.407,1
+5,120.00,6,24.1,1004.28,268.28,,0.402,1
+5,120.00,6,23.0,1016.85,267.21,,0.384,1
+5,120.00,6,24.2,988.67,265.17,,0.404,1
+,,6,23.9,1012.62,267.37,A,0.399,1
+
+6,120.00,5,20.1,1077.14,290.37,,0.334,0
+6,120.00,5,20.4,1089.49,291.29,,0.341,0
+6,120.00,6,21.2,1028.31,291.54,,0.353,0
+6,120.00,6,21.9,1031.46,289.60,,0.366,0
+6,120.00,7,24.3,1036.34,292.40,,0.404,0
+6,120.00,6,22.5,1070.77,290.09,,0.374,0
+,,6,21.7,1055.58,290.88,A,0.362,0
+

@@ -1,0 +1,59 @@
+Assay Definition
+
+Assay Description:
+
+Assay Type: DPM (Single)
+Report Name: Report1
+Output Data Path: C:\Packard\Tricarb\Results\Default\NEW_Flibe_Long\20241203_1642\Replay_20241213_115002
+Raw Results Path: C:\Packard\Tricarb\Results\Default\NEW_Flibe_Long\20241203_1642\20241203_1642.results
+Comma-Delimited File Name: C:\Packard\Tricarb\Results\Default\NEW_Flibe_Long\20241203_1642\Replay_20241213_115002\NEW_1L_BL-1_IV-1-7_OV-1-4.csv
+Assay File Name: C:\Packard\TriCarb\Assays\NEW_Flibe_Long.lsa
+
+Additional Data Files Generated with this Protocol:
+Report1
+		[Excel]	NEW_1L_BL-1_IV-1-7_OV-1-4.csv
+
+
+Count Conditions
+
+Nuclide: 3H UG LLT Normal     
+   Quench Indicator: tSIE/AEC
+   External Std Terminator (sec): 0.5 2s%
+   Pre-Count Delay (min): 0.00
+Quench Set:                   
+   Low Energy: 3H-UG-LLT-NM
+Count Time (min): 100.00
+Count Mode: Normal                                          
+Assay Count Cycles: 1         Repeat Sample Count: 1        
+Number of Vials/Sample: 1     Calculate % Reference: Off                                  
+
+
+Background Subtract: Off
+Low CPM Threshold: Off
+2 Sigma % Terminator: Off
+
+Regions         LL       UL
+A              0.0     18.6
+B              2.0     18.6
+C              4.0     18.6
+
+
+Count Corrections
+
+Static Controller: On         Luminescence Correction: On     GCT: n/a
+Colored Samples: Off          Heterogeneity Monitor: Off      PAC: Disabled
+Coincidence Time (nsec): 18   Delay Before Burst (nsec): 75   PAC Strength: n/a   Auxiliary Spectrum: n/a
+
+
+S#,Count Time,CPMA,DPM1,SIS,tSIE,MESSAGES,Bq:1,LUM
+1,100.00,6,22.1,1028.08,286.96,,0.369,3
+Missing vial 2.
+3,100.00,7,18.5,1040.18,420.58,,0.308,4
+4,100.00,6,22.7,1054.40,296.43,,0.378,2
+5,100.00,14,52.2,891.62,292.51,,0.871,2
+6,100.00,10,36.1,982.96,291.93,,0.602,2
+Missing vial 7.
+8,100.00,8,16.9,1070.04,535.47,,0.282,8
+9,100.00,7,26.4,1051.00,299.88,,0.440,1
+10,100.00,7,25.7,1044.92,290.36,,0.429,1
+11,100.00,6,22.9,1063.43,292.21,,0.382,1

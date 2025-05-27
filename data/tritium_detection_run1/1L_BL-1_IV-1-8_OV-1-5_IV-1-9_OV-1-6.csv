@@ -1,0 +1,69 @@
+Assay Definition
+
+Assay Description:
+
+Assay Type: DPM (Single)
+Report Name: Report1
+Output Data Path: C:\Packard\Tricarb\Results\Default\NEW_Flibe_Long\20241209_1453\Replay_20241213_115119
+Raw Results Path: C:\Packard\Tricarb\Results\Default\NEW_Flibe_Long\20241209_1453\20241209_1453.results
+Comma-Delimited File Name: C:\Packard\Tricarb\Results\Default\NEW_Flibe_Long\20241209_1453\Replay_20241213_115119\NEW_1L_BL-1_IV-1-8_OV-1-5_IV-1-9_OV-1-6.csv
+Assay File Name: C:\Packard\TriCarb\Assays\NEW_Flibe_Long.lsa
+
+Additional Data Files Generated with this Protocol:
+Report1
+		[Excel]	NEW_1L_BL-1_IV-1-8_OV-1-5_IV-1-9_OV-1-6.csv
+
+
+Count Conditions
+
+Nuclide: 3H UG LLT Normal     
+   Quench Indicator: tSIE/AEC
+   External Std Terminator (sec): 0.5 2s%
+   Pre-Count Delay (min): 0.00
+Quench Set:                   
+   Low Energy: 3H-UG-LLT-NM
+Count Time (min): 100.00
+Count Mode: Normal                                          
+Assay Count Cycles: 1         Repeat Sample Count: 1        
+Number of Vials/Sample: 1     Calculate % Reference: Off                                  
+
+
+Background Subtract: Off
+Low CPM Threshold: Off
+2 Sigma % Terminator: Off
+
+Regions         LL       UL
+A              0.0     18.6
+B              2.0     18.6
+C              4.0     18.6
+
+
+Count Corrections
+
+Static Controller: On         Luminescence Correction: On     GCT: n/a
+Colored Samples: Off          Heterogeneity Monitor: Off      PAC: Disabled
+Coincidence Time (nsec): 18   Delay Before Burst (nsec): 75   PAC Strength: n/a   Auxiliary Spectrum: n/a
+
+
+S#,Count Time,CPMA,DPM1,SIS,tSIE,MESSAGES,Bq:1,LUM
+1,100.00,6,21.8,1054.28,287.02,,0.364,1
+Missing vial 2.
+3,100.00,7,23.4,1038.28,323.47,,0.390,1
+4,100.00,6,21.3,1078.84,294.95,,0.355,0
+5,100.00,10,39.0,931.30,290.19,,0.650,0
+6,100.00,7,27.7,1027.42,290.68,,0.461,0
+Missing vial 7.
+8,100.00,7,18.3,1055.16,377.75,,0.306,1
+9,100.00,7,24.0,1102.12,303.17,,0.401,0
+10,100.00,6,23.6,1035.25,290.56,,0.393,0
+11,100.00,6,23.5,1086.38,292.59,,0.391,0
+Missing vial 12.
+13,100.00,7,22.1,1056.12,339.88,,0.369,0
+14,100.00,6,20.5,1083.02,293.17,,0.341,0
+15,100.00,7,26.8,1018.17,294.14,,0.447,0
+16,100.00,7,26.6,1001.15,291.72,,0.443,0
+Missing vial 17.
+18,100.00,6,19.0,1085.74,361.88,,0.317,0
+19,100.00,6,21.6,1025.80,295.74,,0.359,0
+20,100.00,7,27.0,1017.27,293.51,,0.451,0
+21,100.00,6,23.8,1019.51,290.80,,0.397,0
